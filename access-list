@@ -1,0 +1,8 @@
+show access-list
+Extended IP access list HR_BLOCK_SERVER
+    10 deny ip 192.168.20.0 0.0.0.255 192.168.99.0 0.0.0.255 (5 match(es))
+    20 permit ip any any (6 match(es))
+Extended IP access list GUEST_POLICY
+    10 deny ip 192.168.30.0 0.0.0.255 192.168.10.0 0.0.0.255 (4 match(es))
+    20 deny ip 192.168.30.0 0.0.0.255 192.168.20.0 0.0.0.255 (1 match(es))
+    30 permit ip any any (1 match(es))
